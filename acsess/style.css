@@ -21,24 +21,29 @@ body > div {
 }
 
 .tab__name {
+    color: #c23564;
     min-width: 120px;
     text-align: center;
     cursor: pointer;
-    line-height: 2.3rem;
-    border-bottom: 3px solid #C13665;
+    border-bottom: 5px solid transparent;
+    opacity: 0.6;
+    cursor: pointer;
+    transition: all 0.5s ease;
 }
 
 .tab__name i {
     font-size: 1.2rem;
     color: #CB6081;
     position: relative;
-    width: 32px;
+    width: 22px;
 }
 
 .tab__name span {
+    line-height: 2.2rem;
     font-size: 1.2rem;
-    font-weight: 300;
+    font-weight: 400;
     color: #CB6081;
+    padding: 8px;
 }
 
 .tab__name:hover {
@@ -56,6 +61,7 @@ body > div {
 }
 
 .tab__name.active {
+    font-weight: 500;
     opacity: 1;
 }
 
@@ -64,7 +70,7 @@ body > div {
     left: 0;
     bottom: 0;
     width: 0;
-    height: 6px;
+    height: 4px;
     border-radius: 15px;
     background-color: #c23564;
     transition: all 0.2s ease;
