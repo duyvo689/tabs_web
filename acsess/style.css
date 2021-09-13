@@ -1,4 +1,88 @@
-.html {
-    font-family: 'Roboto', sans-serif;
+* {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+}
+
+body > div {
+    margin: 15% auto 0;
+    max-width: 484px;
+  }
+
+.tab {
+    display: flex;
+    position: relative;
+    text-align: center;
+}
+
+.tab__name {
+    min-width: 120px;
+    text-align: center;
+    cursor: pointer;
+    line-height: 2.3rem;
+    border-bottom: 3px solid #C13665;
+}
+
+.tab__name i {
+    font-size: 1.2rem;
+    color: #CB6081;
+    position: relative;
+    width: 32px;
+}
+
+.tab__name span {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #CB6081;
+}
+
+.tab__name:hover {
+    opacity: 1;
+    background-color: rgba(194, 53, 100, 0.05);
+    border-color: rgba(194, 53, 100, 0.1);
+}
+
+.tab__name i:hover {
+    color: #C13665;
+}
+
+.tab__name span:hover {
+    color: #4E5079;
+}
+
+.tab__name.active {
+    opacity: 1;
+}
+
+.tab .line {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 6px;
+    border-radius: 15px;
+    background-color: #c23564;
+    transition: all 0.2s ease;
+  }
+
+.tab__pane {
+    color: #333;
+    margin-top: 16px;
+    font-size: 1rem;
+    font-weight: 400;
+    display: none;
+}
+
+.tab__pane.active {
+    display: block;
+}
+
+.tab__content p {
+    padding-top: 8px;
+    text-align: justify;
 }
